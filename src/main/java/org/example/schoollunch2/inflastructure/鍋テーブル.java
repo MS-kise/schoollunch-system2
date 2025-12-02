@@ -14,7 +14,8 @@ public class 鍋テーブル implements 使う鍋に対応する炊飯時間表 
     private final List<PotData> データベース = List.of(
             new PotData("小さい鍋", 25),
             new PotData("浅い鍋", 22),
-            new PotData("深い鍋", 40)
+            new PotData("深い鍋", 40),
+            new PotData("特大の鍋", 20)
     );
 
     @Override
