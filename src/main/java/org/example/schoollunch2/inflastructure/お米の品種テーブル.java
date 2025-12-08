@@ -27,17 +27,3 @@ public class お米の品種テーブル implements 品種に対応するお米�
 
     public record RiceData(String name, float coefficient) { }
 }
-
-
-
-//
-//    @Override
-//    public 炊飯時間 取得する(使う鍋 使う鍋) {
-//        for (var potData : データベース) {
-//            if (使う鍋.get使う鍋().equals(potData.name)) {
-//                return new 炊飯時間(potData.timeMinutes);
-//            }
-//        }
-//        throw new IllegalArgumentException("Unknown pot: " + 使う鍋.get使う鍋());
-//    }
-//}

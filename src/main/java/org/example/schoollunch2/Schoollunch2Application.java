@@ -14,12 +14,12 @@ public class Schoollunch2Application {
         var context = SpringApplication.run(Schoollunch2Application.class, args);
         var 人数分の炊飯をする = context.getBean(org.example.schoollunch2.usecase.人数分の炊飯をする.class);
         出力内容 out = 人数分の炊飯をする.実行する(new 給食を食べる人数(154), new 今の水温(10), new お米の品種("きらら３９７"));
-        System.out.println("お米の量: " + out.お米の量().getお米の量() + "g");
-        System.out.println("洗米時間: " + out.洗米時間().get洗米時間() + "分");
-        System.out.println("注水量: " + out.注水量().get注水量() + "ml");
-        System.out.println("使う鍋: " + out.使う鍋().get使う鍋());
-        System.out.println("炊飯時間: " + out.炊飯時間().get炊飯時間() + "分");
-        System.out.println("お米を研ぐ人数: " + out.お米を研ぐ人数().getお米を研ぐ人数() + "人");
+        System.out.println("getお米の量: " + out.getお米の量().getお米の量() + "g");
+        System.out.println("get洗米時間: " + out.get洗米時間().get洗米時間() + "分");
+        System.out.println("get注水量: " + out.get注水量().get注水量() + "ml");
+        System.out.println("get使う鍋: " + out.get使う鍋().get使う鍋());
+        System.out.println("get炊飯時間: " + out.get炊飯時間().get炊飯時間() + "分");
+        System.out.println("getお米を研ぐ人数: " + out.getお米を研ぐ人数().getお米を研ぐ人数() + "人");
     }
 
 }
